@@ -9,9 +9,9 @@ def fibonacci(n):
 
     '''
     if n == 0:
-        print(0)
+        return 0
     if n == 1:
-        print(1)
+        return 1
 
     if n>=2:
         nth = [0]*(n+1) #the 1st value of the array is index with 0 hence why need the "n+1"
@@ -19,15 +19,14 @@ def fibonacci(n):
         nth[1] = 1
         for i in range (2,n+1):
             nth[i] = nth[i-1] + nth[i-2]
-        print(nth[n])
+        return nth[n]
     pass
-
 
 def lucas(n):
     if n == 0:
-        print(2)
+        return 2
     if n == 1:
-        print(1)
+        return 1
 
     if n>=2:
         nth = [0]*(n+1) #the 1st value of the array is index with 0 hence why need the "n+1"
@@ -35,15 +34,14 @@ def lucas(n):
         nth[1] = 1
         for i in range (2,n+1):
             nth[i] = nth[i-1] + nth[i-2]
-        print(nth[n])
+        return nth[n]
     pass
-
 
 def sum_series(n, n0=0, n1=1):
     if n == 0:
-        print(n0)
+        return n0
     if n == 1:
-        print(n1)
+        return n1
 
     if n>=2:
         nth = [0]*(n+1) #the 1st value of the array is index with 0 hence why need the "n+1"
@@ -51,9 +49,7 @@ def sum_series(n, n0=0, n1=1):
         nth[1] = n1
         for i in range (2,n+1):
             nth[i] = nth[i-1] + nth[i-2]
-        print(nth[n])
-
-
+        return nth[n]
     pass
 
 if __name__ == "__main__":
