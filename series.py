@@ -7,6 +7,8 @@ def fibonacci(n):
     For example n = 0 given the formula's structure: f(o) = f(-1) + f(-2). It is impossible to use a negative
     value to pull data from the variable "nth"
 
+    These comments may seem silly but as per the directions of the assignment it is required to use comments/docstring
+
     '''
     if n == 0:
         return 0
@@ -23,6 +25,16 @@ def fibonacci(n):
     pass
 
 def lucas(n):
+    '''Returns the nth value of the lucas function.
+
+    Important notes that are considered:
+    For values of n = 0 or n = 1 is relies on a simple if statements.
+    This is required because in a for loop it is impossible to consider these initial two values.
+    For example n = 0 given the formula's structure: f(o) = f(-1) + f(-2). It is impossible to use a negative
+    value to pull data from the variable "nth"
+
+    These comments may seem silly but as per the directions of the assignment it is required to use comments/docstrings
+    '''
     if n == 0:
         return 2
     if n == 1:
